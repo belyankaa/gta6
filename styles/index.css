@@ -11,6 +11,41 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    background: black;
+}
+
+.header .container {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header .logo .logo-image {
+    max-width: 40px;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 12px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+.header .logo .logo-image img {
+    width: 100%;
+}
+
 .main {
 }
 
