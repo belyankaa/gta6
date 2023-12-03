@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Nexa-bold";
+    src: url("../assets/fonts/NexaText-Trial-Heavy.ttf");
+}
+
+@font-face {
+    font-family: "Nexa-reg";
+    src: url("../assets/fonts/NexaText-Trial-Regular.ttf");
+}
