@@ -1,9 +1,106 @@
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1840px) {
+    .container {
+        padding: 0 15px;
+    }
 
+    .test img:first-child {
+        position: absolute;
+        top: -220px;
+        left: 0;
+    }
 
-    .main {
-        margin-bottom: -200px;
+    .test img:last-child {
+        position: absolute;
+        top: -220px;
+        right: 0;
     }
 }
 
-@media screen and (max-width: 1700px) {}
+@media screen and (max-width: 1582px) {
+    .first-under span img {
+        display: none;
+    }
+
+    .preview-content-bold-text {
+        line-height: 64px;
+    }
+
+    .third-under span img {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .second-under span img {
+        display: none;
+    }
+
+    .preview-content-text {
+        margin-left: unset;
+    }
+
+    .preview-content-bold-text {
+        margin-left: unset;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .test-btn {
+        width: 400px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .test img:last-child {
+        display: none;
+    }
+
+    .test img:first-child {
+        top: -245px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .preview-content-title span img {
+        top: 126px;
+    }
+
+    .title-second span img {
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .preview-content-title span img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .test img:first-child {
+        display: none;
+    }
+
+    .test-btn {
+        width: 200px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .watch-btn {
+        height: 92px;
+        width: 200px;
+        font-size: 25px;
+    }
+
+    .test {
+        margin-top: -100px;
+        padding-top: 100px;
+        padding-bottom: 90px;
+        background-image: url(../assets/images/testBack.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

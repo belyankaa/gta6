@@ -6,23 +6,12 @@ body {
     color: white;
 }
 
+.container {
+    max-width: 1685px;
+    margin: 0 auto;
+}
+
 .main {
-    position: relative;
-    margin-bottom: -100px;
-}
-
-.palms {
-    width: 100%;
-    position: absolute;
-    user-select: none;
-    display: flex;
-    justify-content: space-between;
-    bottom: 0;
-}
-
-.palms img {
-    z-index: 2;
-    display: block;
 }
 
 .preview {
@@ -50,11 +39,6 @@ body {
     text-align: center;
     font-size: 60px;
     margin-bottom: 139px;
-}
-
-.preview-content {
-    max-width: 1685px;
-    margin: 0 auto;
 }
 
 .preview-content-title {
@@ -124,6 +108,8 @@ body {
 }
 
 .test {
+    z-index: 3;
+    position: relative;
     margin-top: -100px;
     padding-top: 311px;
     padding-bottom: 134px;
@@ -136,6 +122,18 @@ body {
     text-align: center;
 }
 
+.test img:first-child {
+    position: absolute;
+    top: -190px;
+    left: 0;
+}
+
+.test img:last-child {
+    position: absolute;
+    top: -190px;
+    right: 0;
+}
+
 .btn {
     cursor: pointer;
     text-align: center;
@@ -145,6 +143,7 @@ body {
 }
 
 .test-btn {
+    z-index: 5;
     margin-bottom: 105px;
     width: 752px;
     height: 181px;
@@ -154,6 +153,7 @@ body {
 }
 
 .watch-btn {
+    z-index: 5;
     box-sizing: border-box;
     height: 92px;
     width: 366px;
