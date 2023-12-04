@@ -272,7 +272,7 @@ a:hover {
 }
 
 .menu {
-    /*display: none;*/
+    display: none;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
