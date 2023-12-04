@@ -272,7 +272,7 @@ a:hover {
 }
 
 .menu {
-    display: none;
+    /*display: none;*/
     z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -280,10 +280,12 @@ a:hover {
     left: 0;
     height: 100%;
     width: 100%;
+    transition: .5s ease;
 }
 
 .action {
-    display: none;
+    /*display: none;*/
+    display: flex; 
     position: absolute;
     flex-direction: column;
     align-items: center;
@@ -292,6 +294,7 @@ a:hover {
     top: 0;
     height: 400px;
     width: 100%;
+    transition: .5s ease;
 }
 
 .action input {
@@ -307,6 +310,7 @@ a:hover {
     color: #FCAF17;
     font-size: 30px;
     border-radius: 5px;
+    transition: .5s ease;
 }
 
 .action button {
@@ -319,9 +323,11 @@ a:hover {
     border: 5px;
     width: 150px;
     height: 40px;
+    transition: .5s ease;
 }
 
 .close {
+    cursor: pointer;
     z-index: 1001;
     position: absolute;
     top: 0;
@@ -338,22 +344,26 @@ a:hover {
 
 @keyframes open {
     0% {
-        top: -400px
+        top: -400px;
+        opacity: 0;
     }
 
     100% {
         top: 0;
+        opacity: 1;
     }
 }
 
 @keyframes close {
     0% {
         top: 0;
+        opacity: 1;
         display: flex;
     }
 
     100% {
         top: -400px;
+        opacity: 0;
         display: none;
     }
 }
