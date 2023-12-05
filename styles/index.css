@@ -170,13 +170,13 @@ a:hover {
 
 .test img:first-child {
     position: absolute;
-    top: -190px;
+    top: -210px;
     left: 0;
 }
 
 .test img:last-child {
     position: absolute;
-    top: -190px;
+    top: -210px;
     right: 0;
 }
 
