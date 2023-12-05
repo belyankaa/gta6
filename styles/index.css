@@ -207,6 +207,11 @@ a:hover {
     border-radius: 26px;
     font-size: 30px;
     color: rgb(175, 175, 175);
+    padding: 10px 20px;
+}
+
+.watch-btn:hover {
+    color: rgb(175, 175, 175);
 }
 
 .footer {
@@ -373,4 +378,21 @@ a:hover {
         opacity: 0;
         display: none;
     }
+}
+
+.video-block {
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
 }
