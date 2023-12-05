@@ -304,7 +304,6 @@ a:hover {
     width: 200px;
     background: black;
     outline: none;
-    margin-bottom: 20px;
     padding: 10px 20px;
     box-sizing: border-box;
     color: #FCAF17;
@@ -324,6 +323,14 @@ a:hover {
     width: 150px;
     height: 40px;
     transition: .5s ease;
+    margin-top: 20px;
+}
+
+#error {
+    display: none;
+    margin-top: 5px;
+    color: red;
+    font-size: 10px;
 }
 
 .close {
