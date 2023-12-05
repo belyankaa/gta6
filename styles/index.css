@@ -288,14 +288,19 @@ a:hover {
     transition: .5s ease;
 }
 
+.promo-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .action {
-    /*display: none;*/
+    background-color: #000000;
+    box-shadow: 0 0 20px 20px #000000;
     display: flex; 
     position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: black;
     top: 0;
     height: 400px;
     width: 100%;
@@ -381,8 +386,11 @@ a:hover {
 }
 
 .video-block {
+    display: none;
+    opacity: 0;
+    transition: .3s ease;
     user-select: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     position: fixed;
     height: 100%;
@@ -395,4 +403,9 @@ a:hover {
     position: absolute;
     top: calc(50% - 200px);
     left: calc(50% - 300px);
+}
+
+
+#player {
+    border-radius: 15px;
 }

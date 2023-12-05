@@ -11,7 +11,14 @@ const input = document.getElementById('input');
 const checkPromoCodeButton = document.getElementById('download');
 const error = document.getElementById('error');
 
+const playerBlock = document.getElementById('video-block');
+const watchButton = document.getElementById('watch');
+
 close.onclick = () => {
+    closePromoCodeSpace();
+}
+
+menu.onclick = () => {
     closePromoCodeSpace();
 }
 
@@ -25,7 +32,13 @@ checkPromoCodeButton.onclick = () => {
     checkPromoCode(input.value);
 }
 
+watchButton.onclick = () => {
+    openVideo();
+}
 
+playerBlock.onclick = () => {
+    closeVideo();
+}
 
 
 function download(url) {
@@ -65,5 +78,17 @@ function closePromoCodeSpace() {
     actionBlock.classList.remove('open');
     setTimeout(() => {
         menu.style.display = 'none';
+    }, 300)
+}
+
+function openVideo() {
+    playerBlock.style.display = 'block';
+    playerBlock.style.opacity = '1';
+}
+
+function closeVideo() {
+    playerBlock.style.opacity = '0';
+    setTimeout(() => {
+        playerBlock.style.display = 'none';
     }, 300)
 }

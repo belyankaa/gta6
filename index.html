@@ -75,8 +75,7 @@
             </div>
 
             <div>
-                <a class="btn watch-btn" href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener noreferrer">Watch the trailer</a>
-<!--                <button class="btn watch-btn">Watch the trailer</button>-->
+                <button class="btn watch-btn" id="watch">Watch the trailer</button>
             </div>
 
             <img src="assets/images/rightPalm.png" alt="palm">
@@ -171,22 +170,23 @@
         </svg>
     </div>
     <div class="action" id="block">
+        <div class="promo-title">Enter tester promo code</div>
         <input id="input" type="text">
         <label id="error" for="input">Wrong promocode</label>
         <button id="download">Submit</button>
     </div>
 </section>
 
-<!--<section class="video-block">-->
-<!--    <div class="video">-->
-<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=WnyDAGH8avAaxdOA"-->
-<!--                title="YouTube video player" frameborder="0"-->
-<!--                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-<!--                allowfullscreen>-->
+<section class="video-block" id="video-block">
+    <div class="video" id="video">
+        <iframe id="player" width="700" height="394" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=WnyDAGH8avAaxdOA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
 
-<!--        </iframe>-->
-<!--    </div>-->
-<!--</section>-->
+        </iframe>
+    </div>
+</section>
 
 <script type="module" src="index.js"></script>
 </body>
