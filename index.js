@@ -14,11 +14,13 @@ const error = document.getElementById('error');
 const playerBlock = document.getElementById('video-block');
 const watchButton = document.getElementById('watch');
 
+const backBlock = document.getElementById('close-block');
+
 close.onclick = () => {
     closePromoCodeSpace();
 }
 
-menu.onclick = () => {
+backBlock.onclick = () => {
     closePromoCodeSpace();
 }
 
@@ -66,6 +68,7 @@ function checkPromoCode(code) {
 }
 
 function openPromoCodeSpace() {
+    backBlock.style.display = 'block';
     close.style.display = 'block';
     menu.style.display = 'block';
     actionBlock.classList.remove('closepop');
@@ -73,6 +76,7 @@ function openPromoCodeSpace() {
 }
 
 function closePromoCodeSpace() {
+    backBlock.style.display = 'none';
     close.style.display = 'none';
     actionBlock.classList.add('closepop');
     actionBlock.classList.remove('open');

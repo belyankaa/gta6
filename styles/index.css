@@ -166,6 +166,7 @@ a:hover {
 
 .test div {
     text-align: center;
+    z-index: 500;
 }
 
 .test img:first-child {
@@ -277,8 +278,8 @@ a:hover {
 }
 
 .menu {
+    z-index: 998;
     display: none;
-    z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -288,12 +289,23 @@ a:hover {
     transition: .5s ease;
 }
 
+#close-block {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    height: 100%;
+    width: 100%;
+}
+
 .promo-title {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
 .action {
+    z-index: 999;
     background-color: #000000;
     box-shadow: 0 0 20px 20px #000000;
     display: flex; 
